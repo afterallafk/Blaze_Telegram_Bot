@@ -28,7 +28,7 @@ def add_device(database):
     print("\n--- Add New Device ---")
     device = input("Enter device name: ").strip()
     codename = input("Enter device codename: ").strip()
-    maintainer = input("Enter maintainer name: ").strip()
+    maintainer = input("Enter maintainer name (without @): ").strip()
     sgroup = input("Enter support group (sgroup): ").strip()
 
     database.append({
