@@ -82,6 +82,15 @@ def create_post(codename):
     
     return post
 
+# Function to ensure that the webhook is deleted before starting polling
+def delete_webhook():
+    try:
+        bot.remove_webhook()  # This will delete the active webhook
+        logger.info("Webhook successfully removed.")
+    except Exception as e:
+        logger.error(f"Error while removing webhook: {e}")
+        bot.send_message(admin_id, f"Error while removing webhook: {e}")
+
 # Command handler for /post
 @bot.message_handler(commands=['post'])
 def handle_post_command(message):
@@ -127,12 +136,15 @@ def handle_post_command(message):
         bot.send_message(admin_id, f"Error occurred while processing /post command: {e}")
         bot.send_message(admin_id, f"Traceback:\n{str(e)}")
 
-# Start the bot
+# Start the bot with webhook deletion before polling
 if __name__ == "__main__":
     try:
+        # Ensure the webhook is removed
+        delete_webhook()
+
         # Log that the bot is starting
         logger.info("Bot is starting...")
-        
+
         # Send a startup message to admin
         bot.send_message(admin_id, "Bot is starting...")
 
