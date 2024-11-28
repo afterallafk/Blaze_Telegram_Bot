@@ -4,5 +4,11 @@
         "codename": "sweet",
         "maintainer": "kamleshpatidar",
         "sgroup": "https://t.me/kamleshbuild_sg"
+    },
+    {
+        "device": "Poco F3 / Mi 11X / Redmi K40",
+        "codename": "alioth",
+        "maintainer": "SanjiVns",
+        "sgroup": "https://t.me/sanjissupport"
     }
 ]
