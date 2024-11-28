@@ -1,0 +1,20 @@
+[
+    {
+        "device": "Pixel 6",
+        "codename": "oriole",
+        "maintainer": "John Doe",
+        "sgroup": "Pixel Support Group"
+    },
+    {
+        "device": "Galaxy S21",
+        "codename": "o1s",
+        "maintainer": "Jane Smith",
+        "sgroup": "Galaxy Devs"
+    },
+    {
+        "device": "Redmi Note 10 Pro",
+        "codename": "sweet",
+        "maintainer": "Kamlesh",
+        "sgroup": "kamlesh_build_sg"
+    }
+]
