@@ -73,7 +73,7 @@ def create_post(codename):
 ▪️ Changelog: <a href="https://raw.githubusercontent.com/ProjectBlaze/official_devices/refs/heads/14/device/{codename}.txt">Device</a>
 ▪️ <a href="https://www.projectblaze.in/">Download</a>
 ▪️ <a href="https://t.me/projectblaze/127505">Screenshots</a>
-▪️ <a href="https://t.me/{sgroup}">Support Group</a>
+▪️ <a href="{sgroup}">Support Group</a>
 ▪️ <a href="https://t.me/projectblaze">Community Chat</a>
 ▪️ <a href="https://t.me/projectblazeupdates">Updates Channel</a>
 

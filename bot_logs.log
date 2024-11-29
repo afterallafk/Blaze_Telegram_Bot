@@ -222,3 +222,9 @@ telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsucc
 2024-11-29 10:47:09,654 - INFO - Successfully posted for codename: sweet
 2024-11-29 10:47:28,328 - INFO - Received /post command from igadityasingh with args: /post beryllium
 2024-11-29 10:47:29,352 - INFO - Successfully posted for codename: beryllium
+2024-11-29 10:51:36,719 - INFO - Webhook successfully removed.
+2024-11-29 10:51:36,722 - INFO - Bot is starting...
+2024-11-29 10:53:37,842 - INFO - Received /post command from igadityasingh with args: /post beryllium
+2024-11-29 10:53:40,543 - INFO - Successfully posted for codename: beryllium
+2024-11-29 10:56:05,383 - INFO - Received /post command from igadityasingh with args: /post alioth
+2024-11-29 10:56:06,502 - INFO - Successfully posted for codename: alioth
