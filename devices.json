@@ -16,5 +16,11 @@
         "codename": "beryllium",
         "maintainer": "NotDheeraj06",
         "sgroup": "https://t.me/NotDheeraj06_Builds"
+    },
+    {
+        "device": "Poco X3",
+        "codename": "surya",
+        "maintainer": "BrainDead66",
+        "sgroup": "https://t.me/projectblaze"
     }
 ]
