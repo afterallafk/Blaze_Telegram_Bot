@@ -2,7 +2,6 @@ import json
 import telebot
 from datetime import datetime
 import logging
-from logging.handlers import RotatingFileHandler
 import os
 import sys
 
@@ -23,12 +22,13 @@ admin_id = '1024560836'  # Your provided admin user ID
 # Initialize the bot
 bot = telebot.TeleBot(bot_token)
 
-# Set up logging with rotation
-log_handler = RotatingFileHandler("bot_logs.log", maxBytes=5*1024*1024, backupCount=3)  # 5MB max size, 3 backups
-log_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+# Set up logging to output to the server screen (console)
+logging.basicConfig(
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    level=logging.INFO,
+    stream=sys.stdout  # Output logs to standard output
+)
 logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-logger.addHandler(log_handler)
 
 # Function to escape HTML special characters
 def escape_html(text):
