@@ -216,3 +216,9 @@ Traceback (most recent call last):
     raise ApiTelegramException(method_name, result, result_json)
 telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: can't use getUpdates method while webhook is active; use deleteWebhook to delete the webhook first
 
+2024-11-29 10:47:05,423 - INFO - Webhook successfully removed.
+2024-11-29 10:47:05,429 - INFO - Bot is starting...
+2024-11-29 10:47:06,733 - INFO - Received /post command from igadityasingh with args: /post sweet
+2024-11-29 10:47:09,654 - INFO - Successfully posted for codename: sweet
+2024-11-29 10:47:28,328 - INFO - Received /post command from igadityasingh with args: /post beryllium
+2024-11-29 10:47:29,352 - INFO - Successfully posted for codename: beryllium

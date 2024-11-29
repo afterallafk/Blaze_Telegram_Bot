@@ -64,7 +64,7 @@ def create_post(codename):
     sgroup = escape_html(sgroup)
 
     post = f"""
-#Blaze #{codename} #Android15
+#Blaze #{codename} #Android15 #BETA
 <strong>Project Blaze {database['BlazeVersion']}-BETA - OFFICIAL | Android 15
 📲 : {device} ({codename}) 
 📅 : {post_date} 
@@ -72,12 +72,12 @@ def create_post(codename):
 
 ▪️ Changelog: <a href="https://raw.githubusercontent.com/ProjectBlaze/official_devices/refs/heads/14/device/{codename}.txt">Device</a>
 ▪️ <a href="https://www.projectblaze.in/">Download</a>
-▪️ <a href="https://t.me/projectblaze/120561">Screenshots</a>
+▪️ <a href="https://t.me/projectblaze/127505">Screenshots</a>
 ▪️ <a href="https://t.me/{sgroup}">Support Group</a>
 ▪️ <a href="https://t.me/projectblaze">Community Chat</a>
 ▪️ <a href="https://t.me/projectblazeupdates">Updates Channel</a>
 
-#VanillaIceCream #Stable
+#VanillaIceCream #Stable #Reborn
 """
     
     return post

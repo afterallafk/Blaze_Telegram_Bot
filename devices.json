@@ -10,5 +10,11 @@
         "codename": "alioth",
         "maintainer": "SanjiVns",
         "sgroup": "https://t.me/sanjissupport"
+    },
+    {
+        "device": "Poco F1",
+        "codename": "beryllium",
+        "maintainer": "NotDheeraj06",
+        "sgroup": "https://t.me/NotDheeraj06_Builds"
     }
 ]
