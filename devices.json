@@ -34,5 +34,11 @@
         "codename": "kiev",
         "maintainer": "rgb_tilt",
         "sgroup": "https://t.me/MotoG5GOfficial"
+    },
+    {
+        "device": "Poco X5 Pro",
+        "codename": "redwood",
+        "maintainer": "Jezzay97",
+        "sgroup": "https://t.me/as_build_redwood"
     }
 ]
