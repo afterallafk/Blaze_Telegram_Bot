@@ -4,6 +4,9 @@ from datetime import datetime
 import logging
 import os
 import sys
+import time
+import requests
+from requests.exceptions import ReadTimeout
 
 # Load the devices.json data
 with open("devices.json") as f:
@@ -79,7 +82,6 @@ def create_post(codename):
 
 #VanillaIceCream #Stable #Reborn
 """
-    
     return post
 
 # Function to ensure that the webhook is deleted before starting polling
@@ -148,8 +150,19 @@ if __name__ == "__main__":
         # Send a startup message to admin
         bot.send_message(admin_id, "Bot is starting...")
 
-        # Start polling
-        bot.polling(none_stop=True)
+        # Start polling with timeout handling
+        while True:
+            try:
+                bot.polling(none_stop=True, interval=1, timeout=60, long_polling_timeout=60)
+            except ReadTimeout:
+                logger.warning("Read timeout occurred. Retrying...")
+                bot.send_message(admin_id, "A read timeout occurred. Bot is retrying...")
+                time.sleep(5)  # Wait before retrying
+            except Exception as e:
+                logger.error(f"Unexpected error in polling: {e}")
+                bot.send_message(admin_id, f"Unexpected error occurred: {e}")
+                logger.exception("Exception traceback:")
+                time.sleep(10)  # Wait before retrying in case of unexpected errors
     except Exception as e:
         logger.error(f"Error while starting the bot: {e}")
         bot.send_message(admin_id, f"Bot failed to start: {e}")
