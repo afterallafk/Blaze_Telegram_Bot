@@ -40,5 +40,11 @@
         "codename": "redwood",
         "maintainer": "Jezzay97",
         "sgroup": "https://t.me/as_build_redwood"
+    },
+    {
+        "device": "Poco X5",
+        "codename": "stone",
+        "maintainer": "Nomishaw",
+        "sgroup": "https://t.me/Nomi_builds"
     }
 ]
