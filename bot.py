@@ -14,7 +14,7 @@ with open("devices.json") as f:
 
 # Example of accessing the database details (e.g., BlazeVersion)
 database = {
-    'BlazeVersion': 'v4.1'
+    'BlazeVersion': 'v4.2-EOL'
 }
 
 # Telegram Bot Token and Chat ID
@@ -111,7 +111,7 @@ def handle_post_command(message):
                 logger.warning(f"Codename {codename} not found. No image sent.")
             else:
                 # Path to the fixed image
-                image_path = "banner/blaze_4.1.png"
+                image_path = "banner/blaze_4.2.png"
 
                 if os.path.exists(image_path):
                     # Send the fixed image along with the post content
@@ -124,8 +124,8 @@ def handle_post_command(message):
                     # Log successful post
                     logger.info(f"Successfully posted for codename: {codename}")
                 else:
-                    bot.reply_to(message, "Image blaze_4.1.png not found in the banner folder.")
-                    logger.warning("Image blaze_4.1.png not found in the banner folder.")
+                    bot.reply_to(message, "Image blaze_4.2.png not found in the banner folder.")
+                    logger.warning("Image blaze_4.2.png not found in the banner folder.")
         else:
             bot.reply_to(message, "Please provide the codename of the device after the /post command.")
             logger.warning(f"Invalid /post command received: No codename provided.")
